@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE Cosmetology | Элитная косметология</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Москва, ул. Красивая, 15</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Ежедневно 9:00 - 21:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="navbar">
+                <div class="nav-content">
+                    <div class="logo">
+                        <span class="logo-text">LUXE</span>
+                        <span class="logo-subtext">COSMETOLOGY</span>
+                    </div>
+                    
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#services" class="nav-link">Услуги</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#specialists" class="nav-link">Специалисты</a></li>
+                        <li><a href="#testimonials" class="nav-link">Отзывы</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="btn-cta" id="bookBtn">Записаться</button>
+                        <button class="menu-toggle" id="menuToggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Элитная косметология</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Ваша природная <span class="highlight">красота</span> — 
+                    наша философия
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Инновационные процедуры и индивидуальный подход 
+                    для безупречного состояния вашей кожи
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary" id="consultBtn">
+                        <span>Записаться на консультацию</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="btn-secondary" id="servicesBtn">
+                        Смотреть услуги
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Лет опыта</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Процедур</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="image-placeholder"></div>
+            <div class="floating-elements">
+                <div class="floating-element el1">
+                    <i class="fas fa-star"></i>
+                    <span>Сертифицированные специалисты</span>
+                </div>
+                <div class="floating-element el2">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Гарантия качества</span>
+                </div>
+                <div class="floating-element el3">
+                    <i class="fas fa-award"></i>
+                    <span>Премиальное оборудование</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">
+                    Современные технологии и проверенные методики для вашей красоты
+                </p>
+            </div>
+            
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">О нашем центре</h2>
+                        <p class="section-subtitle">
+                            Luxe Cosmetology — это современный косметологический центр, 
+                            где сочетаются передовые технологии и индивидуальный подход 
+                            к каждому клиенту.
+                        </p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Сертифицированные специалисты</h3>
+                                <p>Все врачи имеют международные сертификаты и многолетний опыт работы</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Безопасность и стерильность</h3>
+                                <p>Используем только сертифицированные препараты и стерильное оборудование</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Индивидуальный подход</h3>
+                                <p>Разрабатываем персональную программу для каждого клиента</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Естественный результат</h3>
+                                <p>Достигаем гармоничного и долговременного эффекта</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-actions">
+                        <button class="btn-primary" id="aboutBtn">
+                            <span>Узнать больше о нас</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="experience-badge">
+                            <span class="years">15+</span>
+                            <span class="label">лет совершенства</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialists Section -->
+    <section class="specialists" id="specialists">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши специалисты</h2>
+                <p class="section-subtitle">
+                    Профессионалы с медицинским образованием и международной практикой
+                </p>
+            </div>
+            
+            <div class="specialists-grid" id="specialistsGrid">
+                <!-- Specialists will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                <p class="section-subtitle">
+                    Более 5000 довольных клиентов доверили нам свою красоту
+                </p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <button class="slider-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="testimonials-container">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <!-- Testimonials will be loaded dynamically -->
+                    </div>
+                </div>
+                
+                <button class="slider-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots">
+                <!-- Dots will be generated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Записаться на прием</h2>
+                <p class="section-subtitle">
+                    Оставьте заявку и мы подберем для вас удобное время
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Телефон</h3>
+                                <p>+7 (999) 123-45-67</p>
+                                <p>+7 (495) 765-43-21</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>info@luxe-cosmetology.ru</p>
+                                <p>appointment@luxe-cosmetology.ru</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Красивая, 15</p>
+                                <p>м. Преображенская площадь</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Часы работы</h3>
+                                <p>Пн-Пт: 9:00 - 21:00</p>
+                                <p>Сб-Вс: 10:00 - 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                            <div class="error-message" id="phoneError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email (необязательно)">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="consultation">Консультация специалиста</option>
+                                <option value="facial">Уход за лицом</option>
+                                <option value="injections">Инъекционная косметология</option>
+                                <option value="hardware">Аппаратные процедуры</option>
+                                <option value="body">Коррекция фигуры</option>
+                            </select>
+                            <div class="error-message" id="serviceError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Ваше сообщение или пожелания" rows="4"></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                Я согласен(а) на обработку персональных данных
+                            </label>
+                            <div class="error-message" id="privacyError"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-btn" id="submitBtn">
+                            <span>Отправить заявку</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <div class="form-success" id="successMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Спасибо! Мы свяжемся с вами в ближайшее время</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">LUXE</span>
+                        <span class="logo-subtext">COSMETOLOGY</span>
+                    </div>
+                    <p class="footer-description">
+                        Ваша красота — наша профессия. 
+                        Современная косметология с заботой о вас.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Эстетическая косметология</a></li>
+                        <li><a href="#services">Аппаратные процедуры</a></li>
+                        <li><a href="#services">Инъекционные методики</a></li>
+                        <li><a href="#services">Уходовые процедуры</a></li>
+                        <li><a href="#services">Массаж и СПА</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#specialists">Специалисты</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Красивая, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@luxe-cosmetology.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Вс: 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2024 Luxe Cosmetology. Все права защищены.
+                </p>
+                <p class="made-with">
+                    Сделано с <i class="fas fa-heart"></i> для вашей красоты
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Запись на прием</h3>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Выберите удобный для вас способ записи:</p>
+                <div class="modal-actions">
+                    <button class="btn-primary" id="modalPhoneBtn">
+                        <i class="fas fa-phone"></i>
+                        Позвонить нам
+                    </button>
+                    <button class="btn-secondary" id="modalFormBtn">
+                        <i class="fas fa-calendar-alt"></i>
+                        Заполнить форму
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="dist/script.js" defer></script>
+</body>
+</html>

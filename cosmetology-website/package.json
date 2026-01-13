@@ -1,0 +1,19 @@
+{
+  "name": "cosmetology-website",
+  "version": "1.0.0",
+  "description": "Косметологический сайт на HTML и TypeScript",
+  "main": "index.html",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "npx serve .",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.0.0",
+    "serve": "^14.0.0"
+  }
+}
